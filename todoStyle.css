@@ -1,0 +1,31 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #161722;
+  color: white;
+}
+
+.list ul {
+  background-color: #25273c;
+  width: 300px;
+  height: 400px;
+  list-style: none;
+}
+
+.list ul li {
+  padding-left: 40px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #777a92;
+}
+/*# sourceMappingURL=todoStyle.css.map */
