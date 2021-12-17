@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,21 +12,108 @@ body {
           flex-direction: column;
   background-color: #161722;
   color: white;
+  font-size: 18px;
 }
 
 .list ul {
   background-color: #25273c;
-  width: 300px;
+  width: 500px;
   height: 400px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .list ul li {
   padding-left: 40px;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  font-size: 18px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.list ul li:hover {
+  background: #d2d3db;
 }
 
 .completed {
   text-decoration: line-through;
-  color: #777a92;
+  color: #4d5066;
+  background-color: #9394a5;
+}
+
+.completed::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #4d5066;
+  color: white;
+}
+
+.header {
+  background-color: #25273c;
+  padding: 10px 0px 20px 0px;
+  margin: 10px 0px 20px 0px;
+  width: 500px;
+  color: white;
+  text-align: center;
+}
+
+.header input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 61%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  margin-left: 40px;
+}
+
+.header input:focus {
+  outline: none;
+}
+
+.addBtn {
+  padding: 10px;
+  width: 15%;
+  background: #161722;
+  color: white;
+  float: right;
+  margin-right: 40px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #e4e5f1;
 }
 /*# sourceMappingURL=todoStyle.css.map */
