@@ -125,5 +125,6 @@ function removeCompleted() {
       toshow[i].remove();
     }
   }
+  
   console.log("remove completed");
 }
