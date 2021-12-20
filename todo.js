@@ -128,3 +128,5 @@ function removeCompleted() {
   
   console.log("remove completed");
 }
+
+// drag and drop
